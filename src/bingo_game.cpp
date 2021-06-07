@@ -1,11 +1,3 @@
-//============================================================================
-// Name    	: SDLTest.cpp
-// Author  	: Viola
-// Version 	:
-// Copyright   : Your copyright notice
-// Description : Hello World in C++, Ansi-style
-//============================================================================
-
 #include <iostream>
 using namespace std;
 
@@ -168,7 +160,7 @@ void set_clips()
 {
 	int i;
 
-	//Clip the sprites¡A¦¹¬°500*500ªº¹Ï¤ù©Ò½Õ¾ãªº¨C­Ó«÷¹Ïªø¼e³]©w
+	//Clip the spritesï¼Œæ­¤ç‚º500*500çš„åœ–ç‰‡æ‰€èª¿æ•´çš„æ¯å€‹æ‹¼åœ–é•·å¯¬è¨­å®š
 	for (i=0;i<25;i++) //500x500
 	{
     	Puzzle_clip[i].x= 100*(i%5);
@@ -429,7 +421,7 @@ void Show_Puzzle()
               	else if(Puzzle_array[i]==-2)
              	 SDL_FillRect( screen, &Puzzle_clip[i], SDL_MapRGB( screen->format, 255, 100, 100 ) );
             	else
-                 	SDL_FillRect( screen,&Puzzle_clip[i], SDL_MapRGB( screen->format, 0x00, 0x00, 0x00 ) );//¥Î¬õ¦â¶ñ¥Rµ¡¤f
+                 	SDL_FillRect( screen,&Puzzle_clip[i], SDL_MapRGB( screen->format, 0x00, 0x00, 0x00 ) );//ç”¨ç´…è‰²å¡«å……çª—å£
           	}
  	}
 
@@ -858,7 +850,7 @@ int main( int argc, char* args[] )
 	}
 
 
-	SDL_Delay(1000);//¶}©l°±¯d®É¶¡
+	SDL_Delay(1000);//é–‹å§‹åœç•™æ™‚é–“
 	while( quit == false )
 	{
 
